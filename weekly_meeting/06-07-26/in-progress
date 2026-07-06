@@ -1,0 +1,7 @@
+1. Add Node context - what is the current state of the model, is it in use? are there current jobs scheduled for it? is it on standby? - pending
+2. Can we consider multiple query in the distributed SD context? or is it future work - pending
+3. Image changes - combined score needs to be added to the routing table and then work flow continues - pending
+4. Emphasise 'Energy' in the optimization problem - CodeCarbon - pending
+5. Add equations to certain descriptive steps in the optimization problem - pending
+6. Update terms - Accuracy as 'Acc', Reasoning as 'res' etc - pending
+7. Accuracy of the model needs to be made dynamic and not static - pending
