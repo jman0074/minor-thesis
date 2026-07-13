@@ -1,5 +1,5 @@
 1) build one more column - distributed in node vs different models
-2) single vs multiple draft models - one draft for multiple queries or have multiple drafts
+2) single vs multiple draft models - one draft for multiple queries or have multiple drafts - IMPORTANT
 3) update the execution stage and be specific for the draft
 3) one query assign affects another query -  can we consider multiple drafts
 4) check wether we need a batch query - if at the end is still one byone
