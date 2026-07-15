@@ -1,0 +1,8 @@
+2) Single vs. multiple draft models
+Right now there's one draft model, only on A40 — so queries routed to A30's small/medium verifiers still have to draft on A40 first, then send those tokens across the network. Better option: put a copy of the draft model on A30 too (it's small, cheap to replicate). Then A30 becomes fully self-sufficient — draft and verify locally, no network hop at all for small/medium queries.
+3) Update execution stage to be specific about the draft
+Once you pick single or multiple drafts, say so explicitly in the execution steps — don't just say "the draft model." If multi-draft: each node drafts and verifies its own queries locally. If single-draft: every query drafts on A40, then A30-routed queries get their tokens sent over afterward. Right now the diagram doesn't say which, and it needs to.
+3) One query's assignment affecting another — consider multiple drafts
+With one shared draft model, every query — no matter which verifier it's assigned — has to pass through A40 to get drafted first. That's a hidden bottleneck: your Scheduler balances verifier load, but drafting itself is still stuck on one machine. Multiple drafts (one per node) removes this — each node's queries draft independently, so one query's assignment stops silently affecting another's.
+4) Do we still need batching if execution is one-by-one anyway?
+Yes — batching isn't for execution, it's for the Scheduler. The Scheduler can only balance load across A40/A30 if it sees several queries' preferences at once, before assigning any of them. If you scored and assigned queries one at a time, there'd be nothing to balance — it'd just collapse into Greedy. Execution stays sequential either way; batching earns its keep at the decision step, not the running step.
