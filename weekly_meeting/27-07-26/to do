@@ -1,0 +1,4 @@
+Discuss - various levels in accuracy across heterogenous models - how can we increase the variation ?
+what are other potential datasets for better variation
+how can we increase variation in the existing datasets - note - we are using 4 bit quantized
+Offline profiling table - we will be processing it batchwise and not sequentially
