@@ -1,3 +1,5 @@
-1) repeat experiment for 6 bit, check if possible on hugging face for even more bits - 8 bit is possible, or retain 16 bit.
+1) repeat experiment for 6 bit, check if possible on hugging face for even more bits - 8 bit is possible, or retain 16 bit - NOT QUANTIZED AS WELL
 2) let draft be 0.5 B, verifiers be 7B and 32B,check for a larger model (B) - 72 B will not work on A40 
-3) 
+3) repeat for time and energy, token consumption etc for the same models 
+4) check another model family - LLama, kimi, GLM. 
+5) specify the quantization technique not just bits
