@@ -1,3 +1,3 @@
 1) repeat experiment for 6 bit, check if possible on hugging face for even more bits - 8 bit is possible, or retain 16 bit.
-2) let draft be 0.5 B, verifiers be 7B and 32B,check for a larger model (B)
+2) let draft be 0.5 B, verifiers be 7B and 32B,check for a larger model (B) - 72 B will not work on A40 
 3) 
