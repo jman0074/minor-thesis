@@ -2,4 +2,5 @@
 2) find models that can get 90% accuracy for these datsets
 3) find benchmarking papers for - MATH, GSM8K, HumanEVAL, mmlu
 4) prepare graph - xaxis: model size in B parameters, y-axis: accuracy
+5) LLama model if possible (3.3 70B) on A100 as 4 bitquant
 5) read papers -  lossless
