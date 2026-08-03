@@ -1,0 +1,5 @@
+1) find data sets with different difficulty levels - currently we have - MATH, GSM8K, HumanEVAL, mmlu
+2) find models that can get 90% accuracy for these datsets
+3) find benchmarking papers for - MATH, GSM8K, HumanEVAL, mmlu
+4) prepare graph - xaxis: model size in B parameters, y-axis: accuracy
+5) read papers -  lossless
