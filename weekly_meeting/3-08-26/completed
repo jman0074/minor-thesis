@@ -1,0 +1,2 @@
+1) ran multiple models (QWEN) in unquantized and quantized form 
+2) ran LLAMA family models (1b, 3b, 8b)
